@@ -4,8 +4,6 @@
 
 //variables for each roll and bonus
 
-using System.ComponentModel.Design;
-
 int strenght = 0;
 int intelligence = 0;
 int strengthBonus = 0;
