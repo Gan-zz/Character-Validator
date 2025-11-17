@@ -27,3 +27,21 @@ Console.WriteLine("Strenght bonus: " + strengthBonus);
 intelligenceBonus = (intelligence - 10)/2;
 Console.WriteLine("Intelligence bonus: " + intelligenceBonus);
 
+if (strengthBonus < 4)
+{
+    Console.WriteLine("Your character does not qualify as a Warrior!");
+}
+else
+{
+    Console.WriteLine("Your character does qualify as a Warrior!");
+}
+
+if (intelligenceBonus < 4)
+{
+    Console.WriteLine("Your character does not qualify as a Mage!");
+}
+else
+{
+    Console.WriteLine("Your character does qualify as a Mage!");
+}
+
