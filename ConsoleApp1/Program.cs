@@ -3,6 +3,9 @@
 //04/11/2025
 
 //variables for each roll and bonus
+
+using System.ComponentModel.Design;
+
 int strenght = 0;
 int intelligence = 0;
 int strengthBonus = 0;
@@ -27,21 +30,19 @@ Console.WriteLine("Strenght bonus: " + strengthBonus);
 intelligenceBonus = (intelligence - 10)/2;
 Console.WriteLine("Intelligence bonus: " + intelligenceBonus);
 
-if (strengthBonus < 4)
-{
-    Console.WriteLine("Your character does not qualify as a Warrior!");
-}
-else
+if (strengthBonus >= 1) 
 {
     Console.WriteLine("Your character does qualify as a Warrior!");
 }
 
-if (intelligenceBonus < 4)
-{
-    Console.WriteLine("Your character does not qualify as a Mage!");
-}
-else
+
+if (intelligenceBonus >= 1) 
 {
     Console.WriteLine("Your character does qualify as a Mage!");
 }
 
+
+if (strengthBonus < 1 || intelligenceBonus < 1) 
+{
+    Console.WriteLine("Your character does not qualify for any class");
+}
