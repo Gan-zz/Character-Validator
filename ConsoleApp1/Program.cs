@@ -20,10 +20,10 @@ Console.WriteLine("Please enter the character's intelligence:");
 intelligence = Convert.ToInt32(Console.ReadLine());
 
 // set strenght bonus and print to user
-strengthBonus = (strenght / 10)-2;
+strengthBonus = (strenght - 10)/2;
 Console.WriteLine("Strenght bonus: " + strengthBonus);
 
 // set intelligence bonus and print to user
-intelligenceBonus = (intelligence / 10)-2;
+intelligenceBonus = (intelligence - 10)/2;
 Console.WriteLine("Intelligence bonus: " + intelligenceBonus);
 
