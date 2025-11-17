@@ -15,12 +15,22 @@ int intelligenceBonus = 0;
 Console.WriteLine("Welcome to the Character Validator!");
 
 // get strenght from user and set strenght to input
-Console.WriteLine("Please enter the character's strenght:");
+Console.WriteLine("Please enter the character's strenght from (1,20):");
 strenght = Convert.ToInt32(Console.ReadLine());
+while (strenght > 20 || strenght < 1)
+{
+    Console.WriteLine("Roll is out of range, please enter again:");
+    strenght = Convert.ToInt32(Console.ReadLine());
+}
 
 // get intelligence from user and set intelligence to input
-Console.WriteLine("Please enter the character's intelligence:");
+Console.WriteLine("Please enter the character's intelligence (1,20):");
 intelligence = Convert.ToInt32(Console.ReadLine());
+while (intelligence > 20 || intelligence < 1)
+{
+    Console.WriteLine("Roll is out of range, please enter again:");
+    intelligence = Convert.ToInt32(Console.ReadLine());
+}
 
 // set strenght bonus and print to user
 strengthBonus = (strenght - 10)/2;
