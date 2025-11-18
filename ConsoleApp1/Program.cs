@@ -132,7 +132,7 @@ while (mayhaps != false)
 
     if (dexterityBonus >= 1)
     {
-        Console.WriteLine("Your character does qualify as a Rouge!");
+        Console.WriteLine("Your character does qualify as a Rogue!");
     }
 
     if (strengthBonus < 1 && intelligenceBonus < 1 && charismaBonus < 1 && constitutionBonus < 1 && wisdomBonus < 1 && dexterityBonus < 1)
