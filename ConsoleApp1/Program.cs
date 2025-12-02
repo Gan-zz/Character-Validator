@@ -52,7 +52,7 @@ if (intelligenceBonus >= 1)
 }
 
 
-if (strengthBonus < 1 && intelligenceBonus < 1 && charismaBonus < 1 && constitutionBonus < 1 && wisdomBonus < 1 && dexterityBonus < 1)
+if (strengthBonus < 1 && intelligenceBonus < 1)
 {
     Console.WriteLine("Your character does not qualify for any class");
 }
